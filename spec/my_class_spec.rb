@@ -24,4 +24,8 @@ describe MyClass do
     expect(MyClass::VERSION).not_to eq nil
   end
 
+  it 'should get init count success ' do
+    expect(MyClass.init_count).to eq 2
+  end
+
 end
